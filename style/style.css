@@ -1,0 +1,213 @@
+/* Color: darkred, #C67F7F, #ececec
+
+Font:  Nova Square, Rajdhani */
+:root{
+    --sec : #ececec;
+    --prim : #c67f7f;
+    --terz : darkred;
+    --white : white;
+}
+/* Classe globale font */
+body{
+    font-family: 'Nova Square', cursive;
+    background-color: var(--sec);
+}
+.my-paragraph{
+    font-size: 1rem;
+}
+.my-paragraph2{
+    font-size: 0.8rem;
+}
+.color-terz{
+    color: var(--terz);
+}
+.font-size-small{
+    font-size: 0.5rem;
+}
+
+
+
+/* CSS del MAIN */
+.my-container{
+    background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(236,236,236,0.2861519607843137) 49%, rgba(236,236,236,1) 100%), url('../media/switzerland-862870_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.image-mountains{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.my-title-font{
+    color: var(--terz);
+    letter-spacing: 3rem;
+    font-size: 300%;
+    z-index: 2;
+}
+@media screen and (max-width: 600px){
+    .my-title-font {
+        letter-spacing: 1.5rem;
+    }
+}
+@media screen and (max-width: 30px){
+    .my-title-font {
+        letter-spacing: 0.5rem;
+    }
+}
+
+
+/* CSS della section 1*/
+blockquote::before {
+    content: open-quote;
+    position: absolute;
+    left: -2%;
+}
+blockquote::after {
+    content: close-quote;
+    position: absolute;
+}
+blockquote::before, blockquote::after {
+    font-size: 2em;
+    color: var(--terz);
+}
+
+
+/* CSS seconda section (icons) */
+.my-col{
+    width: 200px;
+}
+.my-style{
+    color: var(--terz);
+    font-size: 200%;
+}
+.line{
+    width: 80%;
+    height: 5px;
+    background-color: var(--terz);
+    margin-bottom: 10px;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border: solid 2px var(--terz);
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+/* CSS OUR TEAM */
+.img-team{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 4px 4px;
+    border: 2px solid var(--terz);
+}
+.my-bg-img{
+    background-image: url(../media/trees2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+}
+.btn{
+    background-color: var(--terz);
+    border-radius: 0;
+    color: var(--sec);
+    margin: 12% 3% 6% 3%;
+}
+
+
+/* CSS TIMELINE */
+.my-bg-timeline{
+    background-color: var(--white);
+}
+.my-bg-tm-image{
+    background-image: url(../media/single.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: bottom;
+    background-position-x: right;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--terz);
+    top: 35px;
+    bottom: 0;
+    margin-left: -3px;
+    left: 31px;
+}
+/* Container around content */
+.my-tm-container {
+    position: relative;
+    background-color: inherit;
+    padding-left: 70px;
+    padding-right: 25px;
+    margin-top: 20px;
+}
+/* The circles on the timeline */
+.my-tm-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--white);
+    border: 3px solid var(--terz);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.my-right::after {
+    left: 18px;
+}
+/* The actual content */
+.content {
+    padding: 10px 0px;
+    position: relative;
+}
+
+/* OUR BENEFIT */
+.img-benefit{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 6px 6px;
+    border: 3px solid var(--terz);
+}
+.my-bg-img-benefit{
+    background-image: url(../media/other.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    width: 100%;
+}
+.vuoto{
+    height: 40vh;
+}
+.text-red-my{
+    color: var(--terz);
+}
+
+/* FOOTER */
+.bg-terz{
+    background-color: var(--terz);
+    color: var(--sec);
+    padding: 3% 5%;
+}
+.link-rapidi{
+    padding: 0px 15px;
+}
+.list-item-my{
+    padding: 3px 10px;
+}
